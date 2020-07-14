@@ -22,7 +22,7 @@ class Owner
     @@all.size
   end
   
-  def self.buy_cat(name)
+  def buy_cat(name)
     Cat.new(name, self)
   end
     
@@ -31,7 +31,7 @@ class Owner
   end
 
   
-  def reset_all
+  def self.reset_all
     @@all.clear
   end
   

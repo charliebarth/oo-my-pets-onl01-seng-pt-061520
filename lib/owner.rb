@@ -29,7 +29,12 @@ class Owner
   def buy_dog(name)
     Dog.new(name, self)
   end
-
+  
+  def walk_dogs
+    @dogs.each do |dog|
+      dog.mood = "happy"
+    end
+  end
   
   def self.reset_all
     @@all.clear

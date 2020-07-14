@@ -56,6 +56,8 @@ class Owner
   end
   
   def list_pets
+    puts "I have #{@owner.dogs.count}dog(s), and #{@owner.cats.count} cat(s)."
+  end
   
   def self.reset_all
     @@all.clear

@@ -55,6 +55,8 @@ class Owner
     end
   end
   
+  def list_pets
+  
   def self.reset_all
     @@all.clear
   end
